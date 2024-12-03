@@ -173,7 +173,7 @@ namespace CheckersMAUIV2
                 if (child is ImageButton image)
                 {
                     // Check if the Image source matches the name you're looking for
-                    if (image.Source.ToString().Contains("Selected icon.png"))
+                    if (image.Source.ToString().Contains("selected_icon.png"))
                     {
                         // Remove the image from the layout
                         GameBoard.Children.Remove(image);
@@ -189,7 +189,7 @@ namespace CheckersMAUIV2
             yModifier *= yMod;
 
             ImageButton image = new ImageButton();
-            image.Source = @"C:\Users\lewis\source\repos\CheckersMauiV2\CheckersMauiV2\Images\Selected icon.png";
+            image.Source = @"selected_icon.png";
             image.Opacity = 1;
             image.BackgroundColor = Colors.Transparent;
             image.Clicked += (sender, e) => UIManager.MoveToPosition(sender, e, GameBoard);
@@ -206,7 +206,7 @@ namespace CheckersMAUIV2
             yModifier *= yMod;
 
             ImageButton image = new ImageButton();
-            image.Source = @"C:\Users\lewis\source\repos\CheckersMauiV2\CheckersMauiV2\Images\Selected icon.png";
+            image.Source = @"selected_icon.png";
             image.Opacity = 1;
             image.BackgroundColor = Colors.Transparent;
             image.Clicked += (sender, e) => UIManager.ExecuteMove(sender, e, GameBoard, targetsXPos, targetsYPos);

@@ -29,7 +29,7 @@ namespace CheckersMAUIV2
             if (ownedBy == 1 && !isKing)
             {
                 gamePieceButton = new ImageButton();
-                gamePieceButton.Source = @"C:\Users\lewis\source\repos\CheckersMauiV2\CheckersMauiV2\Images\Gold Gamepiece.png";
+                gamePieceButton.Source = @"gold_Gamepiece.png";
                 GameBoard.SetRow(gamePieceButton, posY);
                 GameBoard.SetColumn(gamePieceButton, posX);
                 gamePieceButton.BackgroundColor = Colors.Transparent;
@@ -39,7 +39,7 @@ namespace CheckersMAUIV2
             else if (ownedBy == 1 && isKing)
             {
                 gamePieceButton = new ImageButton();
-                gamePieceButton.Source = @"C:\Users\lewis\source\repos\CheckersMauiV2\CheckersMauiV2\Images\Gold Gamepiece King.png";
+                gamePieceButton.Source = @"gold_gamepiece_king.png";
                 GameBoard.SetRow(gamePieceButton, posY);
                 GameBoard.SetColumn(gamePieceButton, posX);
                 gamePieceButton.BackgroundColor = Colors.Transparent;
@@ -48,7 +48,7 @@ namespace CheckersMAUIV2
             else if (ownedBy == 2 && !isKing)
             {
                 gamePieceButton = new ImageButton();
-                gamePieceButton.Source = @"C:\Users\lewis\source\repos\CheckersMauiV2\CheckersMauiV2\Images\Silver Gamepiece.png";
+                gamePieceButton.Source = @"silver_gamepiece.png";
                 GameBoard.SetRow(gamePieceButton, posY);
                 GameBoard.SetColumn(gamePieceButton, posX);
                 gamePieceButton.BackgroundColor = Colors.Transparent;
@@ -57,7 +57,7 @@ namespace CheckersMAUIV2
             else if (ownedBy == 2 && isKing)
             {
                 gamePieceButton = new ImageButton();
-                gamePieceButton.Source = @"C:\Users\lewis\source\repos\CheckersMauiV2\CheckersMauiV2\Images\Silver Gamepiece King.png";
+                gamePieceButton.Source = @"silver_gamepiece_king.png";
                 GameBoard.SetRow(gamePieceButton, posY);
                 GameBoard.SetColumn(gamePieceButton, posX);
                 gamePieceButton.BackgroundColor = Colors.Transparent;
@@ -80,13 +80,13 @@ namespace CheckersMAUIV2
             if (ownedBy == 1 && posY == 0)
             {
                 isKing = true;
-                gamePieceButton.Source = @"C:\Users\lewis\source\repos\CheckersMauiV2\CheckersMauiV2\Images\Gold Gamepiece King.png";
+                gamePieceButton.Source = @"gold_gamepiece_king.png";
             }
 
             if (ownedBy == 2 && posY == 7)
             {
                 isKing = true;
-                gamePieceButton.Source = @"C:\Users\lewis\source\repos\CheckersMauiV2\CheckersMauiV2\Images\Silver Gamepiece King.png";
+                gamePieceButton.Source = @"silver_gamepiece_king.png";
             }
         }
 
